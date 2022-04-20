@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(255, 254, 254);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.drop {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  margin: 200px auto;
+  border-radius: 50%;
+  box-shadow: inset 0px 37px 20px 0px #12121222,
+    inset 11px 11px 24px 0px #818181, inset 2px 2px 2px 65px #ffffff,
+    7px 14px 35px 2px #444343;
+}
+
+.drop:before {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: 35%;
+  height: 8px;
+  width: 15px;
+  background: #fffefe;
+  border-radius: 50%;
+}
+
+.drop:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 19%;
+  width: 24px;
+  height: 11px;
+  background: #fffefe;
+  border-radius: 50%;
+}
